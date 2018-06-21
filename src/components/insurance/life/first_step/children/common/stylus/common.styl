@@ -1,0 +1,105 @@
+@import '~common/stylus/mixin.styl'
+.item
+    padding: 0 (30/$scale)
+    box-sizing: border-box
+    background: #fff
+    .inner
+        display: flex
+        position: relative
+        border-1px(rgb(230,230,230))
+        .left
+            display: flex
+            flex: 0 0 (230/$scale)         
+            align-items: center
+            width: (230/$scale)
+            .text
+                line-height: (40/$scale)
+                font-size: (28/$scale)
+                color: rgb(68,68,68)
+            .icon-down_arrow
+                margin-left: (10/$scale)
+                font-size: (32/$scale)
+                color: #BBBBBB
+        .right
+            position: relative
+            flex: 1
+            text-align: right
+            .input-text
+                width: 100%
+                margin: (30/$scale) 0
+                vertical-align: top
+                height: (50/$scale)
+                text-align: right
+                font-size: (28/$scale)
+                color: #333333
+            .text        
+                display: inline-block  
+                vertical-align: top
+                height: (50/$scale)
+                margin-top: (38/$scale)   
+                font-size: (28/$scale)
+                color #333333
+            .special-text
+                color: #bbbbbb
+            .sex
+                display: inline-block
+                vertical-align: top
+                margin-top: (25/$scale)
+                margin-left: (20/$scale)
+                width: (108/$scale)
+                height: (48/$scale)
+                line-height: @height
+                text-align: center
+                font-size: (24/$scale)
+                border: (2/$scale) solid #cccccc
+                color: #666666
+                border-radius: (5/$scale)
+                &.active
+                    border: (2/$scale) solid $color-theme
+                    color: $color-theme
+            .icon-right_arrow
+                display: inline-block
+                vertical-align: top
+                margin-top: (35/$scale)
+                font-size: (32/$scale)
+                color: #BBBBBB
+            .people
+                display: inline-block
+                vertical-align: top
+                margin-top: (25/$scale)
+                margin-left: (20/$scale)
+                padding: 0 (10/$scale)
+                min-width: (108/$scale)
+                height: (48/$scale)
+                line-height: @height
+                text-align: center
+                font-size: (20/$scale)
+                box-sizing: border-box
+                border: (2/$scale) solid #cccccc
+                color: #666666
+                border-radius: (5/$scale)
+                &.active
+                    border: (2/$scale) solid $color-theme
+                    color: $color-theme
+        &.active
+            border-none()
+    .effectDate
+        border-none()
+    .reg
+        padding: (20/$scale) 0
+        text-align: right
+        font-size: 0
+        border-1px(rgb(230,230,230))
+        .warn
+            display: inline-block
+            vertical-align: top
+            width: (24/$scale)
+            height: (24/$scale)
+            bg-image('~common/images/warn')
+            background-size @width @height
+        .text
+            display: inline-block
+            vertical-align: top
+            margin-left: (10/$scale)
+            font-size: (28/$scale)
+            color: $color-theme

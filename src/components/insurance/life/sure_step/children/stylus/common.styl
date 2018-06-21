@@ -1,0 +1,60 @@
+@import '~common/stylus/variable.styl'
+.info
+    background-color: #ffffff
+    .title
+        padding: 0 (30/$scale)
+        border-bottom: (2/$scale) solid $color-theme
+        .inner
+            display: flex
+            .text
+                font-weight: bold
+                line-height: (100/$scale)
+                font-size: (30/$scale)
+                color: rgb(68,68,68)
+    .list
+        .item 
+            margin: 0 (30/$scale)
+            border-bottom: (2/$scale) solid #e6e6e6
+            .inner
+                display: flex
+                .left
+                    display: table
+                    width: (180/$scale)
+                    height: (100/$scale)
+                    .text
+                        display: table-cell
+                        vertical-align: middle
+                        line-height: (40/$scale)
+                        font-size: (28/$scale)
+                        color: rgb(68,68,68)
+                .right
+                    display: table
+                    width: (525/$scale)
+                    height: (100/$scale)              
+                    .text
+                        display: table-cell
+                        vertical-align: middle
+                        line-height: (40/$scale)
+                        font-size: (28/$scale)
+                        word-break:break-all
+                        color: rgb(68,68,68)
+            &:last-child
+                border-bottom: none
+.need-attention, .insurance-declaration
+    display: flex
+    padding: 0 (30/$scale)
+    background-color: #ffffff
+    .text
+        font-weight: bold
+        line-height: (100/$scale)
+        font-size: (30/$scale)
+        color: rgb(68,68,68)
+    .icon
+        flex:1
+        text-align: right
+        .icon-right_arrow
+            display: inline-block
+            vertical-align: top
+            margin-top: (30/$scale)
+            font-size: (44/$scale)
+            color: rgb(102,102,102)

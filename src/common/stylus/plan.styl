@@ -1,0 +1,19 @@
+@import '~common/stylus/variable.styl'
+.tableWrap
+    table
+        width: 100%
+        tr
+            height: (80/$scale)
+            line-height: @height
+            border-bottom: 1px solid #e6e6e6
+            &:last-child
+                border-bottom: none
+            td
+                font-size: (28/$scale)
+                color: rgb(85,85,85)
+                &:first-child                   
+                    text-align: left 
+                    padding-left: (20/$scale)
+                &:last-child
+                    text-align: right 
+                    padding-right: (20/$scale)

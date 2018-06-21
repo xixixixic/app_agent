@@ -1,0 +1,119 @@
+@import '~common/stylus/mixin.styl'
+.detailTitle
+	font-size: (30/$scale)
+	line-height: (100/$scale)
+	color: #333
+	border-bottom: 1px solid $color-theme
+	background: #fff
+	padding-left: (30/$scale)
+	.titleLeft
+		color: $color-main
+		font-weight: bold
+	.titleRight
+		color: #333
+		float: right
+		font-size: 15px
+.detail
+	padding: 0 (30/$scale)
+	background: #fff
+	&.lastDetail
+			margin-bottom: (100/$scale)
+	.info
+		font-size: (28/$scale)
+		display: flex
+		justify-content: space-between
+		line-height: (100/$scale)
+		background: #fff
+		border-bottom: 1px solid #E6E6E6
+		&.lastInfo
+			border-bottom: none
+	.hide
+		display: none
+	.errTip
+		display: block
+		padding: (20/$scale) 0
+		text-align: right
+		font-size: 0
+		position: relative
+		.errIco
+			width: (28/$scale)
+			height: (28/$scale)
+			display: inline-block
+			// bg-image('warn')
+			background-size: contain
+			background-repeat: no-repeat
+		.errText
+			display: inline-block
+			vertical-align: top
+			margin-right: (10/$scale)
+			font-size: (28/$scale)
+			color: #ff4456
+	.desTitle
+		color: $color-a-left
+	.desPosition
+		width: 60%
+	.placeholders
+		color: $color-a-right
+		&.active
+			color: #bbb
+		.choose
+			margin-right: (20/$scale)
+		.choice
+			color: $color-main
+			&.active
+				color: $color-theme-placeholder
+		.arr
+			// bg-image('rightArr')
+			width: (20/$scale)
+			height: (30/$scale)
+			display: inline-block
+			background-size: contain
+			background-repeat: no-repeat
+			float: right
+			margin-top: (36/$scale)
+		.sex
+			width: (110/$scale)
+			height: (50/$scale)
+			background: #ffffff
+			color: #666
+			border: 1px solid #E6E6E6
+			border-radius: 3px
+		.res
+			width: (140/$scale)
+			height: (50/$scale)
+			background: #ffffff
+			color: #666
+			border: 1px solid #E6E6E6
+			border-radius: 3px
+		.redSex
+			border: 1px solid $color-theme-border
+			color: #fff
+			width: (110/$scale)
+			height: (50/$scale)
+			background: $color-theme
+			border-radius: 3px
+		.redRes
+			border: 1px solid $color-theme-border
+			color: #fff
+			width: (140/$scale)
+			height: (50/$scale)
+			background: $color-theme
+			border-radius: 3px
+		.placeholdersInput
+			text-align: right
+			background: transparent
+			color: $color-a-right
+		.normal
+			color: #333
+			text-align: right
+			width: 100%
+			&.active
+				color: #bbb
+				line-height: (100/$scale)
+	.position
+		line-height: (30/$scale)
+.test
+	.hide
+		display: none
+	.show
+		display: block

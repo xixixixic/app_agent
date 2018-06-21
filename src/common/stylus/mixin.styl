@@ -1,0 +1,56 @@
+@import '~common/stylus/variable.styl'
+// 背景图片
+bg-image($url)
+  background-image: url($url + "@2x.png")
+  @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3)
+    background-image: url($url + "@3x.png")
+
+// 不换行
+no-wrap()
+  text-overflow: ellipsis
+  overflow: hidden
+  white-space: nowrap
+// 换行显示点点
+ellipsis()
+  display: -webkit-box
+  -webkit-line-clamp: 2
+  -webkit-box-orient: vertical
+  text-overflow: ellipsis
+// 扩展点击区域
+extend-click()
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    top: (-10/$scale)
+    left: (-10/$scale)
+    right: (-10/$scale)
+    bottom: (-10/$scale)
+// 边框1像素
+border-1px($color)
+	position: relative
+	&:after 
+		display: block
+		position: absolute
+		left: 0
+		bottom: 0
+		width: 100%
+		border-top: 1px solid $color
+		content: ''
+// 设置无边框
+border-none()
+	&:after
+		display: none
+// 设置按钮
+btn($margintop, $width, $height, $bgcolor, $fontsize, $fontcolor, $radius)
+  margin 0 auto
+  margin-top $margintop
+  margin-bottom $margintop
+  width $width
+  height $height
+  line-height $height
+  text-align center
+  font-size $fontsize
+  border-radius $radius
+  color $fontcolor
+  background $bgcolor
